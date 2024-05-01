@@ -203,7 +203,13 @@ footer {
   max-width: 100%;
   border-radius: 10%; /* Make the photo round */
 }
-
+.description {
+  margin: 0 50px; /* Adjust the margins as needed */
+}
+.warnningToDelete {
+  display: flex;
+  justify-content: center;
+}
 .button {
   display: inline-block;
   padding: 10px 20px;
