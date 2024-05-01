@@ -1,0 +1,312 @@
+/* Reset default browser styles */
+body,
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  font-family: "Rubik", sans-serif; /* Center text */
+}
+p {
+  font-family: "Rubik", sans-serif;
+  justify-content: 10px;
+  text-align: justify;
+}
+
+.myProjects {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+/* Header styling */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-image: linear-gradient(
+    to right,
+    #100f5ad8,
+    #2d2fa8c5
+  ); /* Gradient effect */
+  color: #fff;
+}
+
+/*---- Navigation styling-------- */
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  background-color: #1735dd4d;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+/*---------body--------*/
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #227adf79;
+}
+.body {
+  margin: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+/* Social links styling */
+.social-links {
+  display: flex;
+  justify-content: center; /* Align items horizontally to the center */
+  align-items: center; /* Align items vertically to the center */
+}
+
+.social-links a {
+  margin: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  /* Adjust margin for better spacing */
+}
+
+.social-links img {
+  width: 50px; /* Adjust width to make the images smaller */
+  height: 50px; /* Adjust height proportionally */
+}
+
+/* Section styling */
+
+/* Project styling */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Add padding for spacing */
+}
+
+.project {
+  display: block;
+  border: 2px solid rgba(4, 2, 31, 0.685);
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: #1735dd31;
+  padding: 90px;
+  border-radius: 5px;
+  box-shadow: 2px #1735dd71;
+  box-sizing: border-box;
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.8s ease; /* Add transition effect */
+  animation: color-changing-border 5s linear infinite;
+}
+
+.project:hover {
+  background-color: rgba(5, 104, 218, 0.1);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+.project-image {
+  display: flex;
+  justify-content: center;
+  /* Center the image horizontally */
+  margin-top: 20px; /* Adjust margin for spacing */
+}
+.icon-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50px; /* Adjust width to make the images smaller */
+  height: 50px;
+}
+.technologies {
+  font-style: italic;
+}
+.tradie {
+  max-width: 400px; /* Adjust the maximum width as needed */
+  height: auto;
+  border-radius: 10px;
+}
+/* Footer styling */
+footer {
+  background-image: linear-gradient(
+    to right,
+    #100f5ad8,
+    #2d2fa8c5
+  ); /* Gradient effect */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  width: 100px; /* Adjust width for better spacing */
+  margin: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.contact-link a {
+  text-decoration: none;
+  color: #333;
+}
+
+.contact-link:hover {
+  background-color: #f4f4f4;
+}
+
+/* About section styling */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image {
+  flex: 0 0 30%; /* Adjust width of the photo */
+  margin-right: 20px; /* Add spacing between photo and description */
+}
+
+.profile-image img {
+  max-width: 100%;
+  border-radius: 10%; /* Make the photo round */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative; /* To position the light effect */
+  overflow: hidden; /* To hide the overflow of light effect */
+  z-index: 1; /* Ensure the button text stays on top of the light effect */
+} /* Add spacing between description and button */
+
+.aboutMe {
+  display: justify;
+  margin: 500px;
+}
+/*----------------border effect---------------*/
+
+@keyframes color-changing-border {
+  0% {
+    border-color: #1735dd71;
+  }
+  50% {
+    border-color: #1735dd71;
+  }
+  100% {
+    border-color: #1735dd71;
+  }
+}
+/*--------------------button effects---------------*/
+.center {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #549ef3e1;
+  border: 2px solid #0e02248c;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.button span {
+  position: relative;
+  z-index: 2;
+}
+
+.button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #008cff2f;
+  transition: all 0.35s;
+}
+
+.button:hover {
+  color: #ffffff;
+}
+
+.button:hover:after {
+  width: 100%;
+}
+/*--------------border effect-------------*/
+
+.btn {
+  border-radius: 50px;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: 3s;
+}
+
+.btn:hover::before {
+  width: 0px;
+  background: #1735dd1c;
+}
+
+.btn:hover::after {
+  height: 0px;
+  background: #1735dd17;
+}
+
+.btn:hover {
+  background: #1735dd13;
+}
