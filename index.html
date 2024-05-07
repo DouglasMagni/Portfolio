@@ -1,71 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="port.css">
-</head>
-<body>
-  <header>
-    <div class="social-links">
-      <a href="https://github.com/DouglasMagni" target="_blank">
-        <img src="github-mark-white.png" alt="GitHub">
-      </a>
-      <a href="mailto:youremail@example.com">
-        <img src="email1.png" alt="Email">
-      </a>
-      <a href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/" target="_blank">
-        <img src="linkedIn.png" alt="LinkedIn">
-      </a>
-    </div>
-    <h1>DOUGLAS MAGNI POST</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a class="button" href="#about">About</a></li>
-      <li><a class="button" href="#projects">Projects</a></li>
-      <li><a class="button" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="body">
-    <section id="about">
-      <div class="btn">
-        <div class="profile-image">
-          <img src="dougphotoDevAc.jpg" alt="Your Photo">
-        </div>
-        <div class="description">
-          <h2 class="AboutMe">About Me</h2>
-          <p>I'm Douglas Post, a recent graduate from a tech program in Auckland, known as Dev Academy Aotearoa. At Dev Academy, I acquired skills in building fullstack software applications in an Agile environment.</p>
-          <p>My professional journey includes 5 years as a support analyst in Brazil, where I assisted ERP users, followed by 5 months as a help desk technician in Auckland, gaining valuable local IT experience. I'm now transitioning into software development, with a keen interest in server-side work and data analysis.</p>
-          <p>Upon arriving in New Zealand 6 years ago on a working holiday visa, I had the opportunity to work and travel across the country. After that great experience, my partner and I decided to settle here and make Aotearoa our new home. To secure residency, I embarked on a career in construction and also took this period to improve my language skills. This journey included managing small teams, which taught me the importance of teamwork and effective communication.</p>
-          <p>In my free time, I enjoy playing football, staying active with workouts, and exploring nature through hiking and cycling. I also have a passion for cooking, particularly barbecue.</p>
-          <p>Let's connect and explore how I can contribute to your team!</p>
-          <div class="center">
-            <a class="button" href="https://drive.google.com/file/d/1C48zr_icr5hiRh9gEiMn8lEx0FgaYsD8/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Download CV</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="port.css" />
+  </head>
+  <body>
+    <header>
+      <div class="social-links">
+        <a href="https://github.com/DouglasMagni" target="_blank">
+          <img src="github-mark-white.png" alt="GitHub" />
+        </a>
+        <a href="mailto:youremail@example.com">
+          <img src="email1.png" alt="Email" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/"
+          target="_blank"
+        >
+          <img src="linkedIn.png" alt="LinkedIn" />
+        </a>
+      </div>
+      <h1>DOUGLAS MAGNI POST</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a class="button" href="#about">About</a></li>
+        <li><a class="button" href="#projects">Projects</a></li>
+        <li><a class="button" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="body">
+      <section id="about">
+        <div class="btn">
+          <div class="profile-image">
+            <img src="dougphotoDevAc.jpg" alt="Your Photo" />
+          </div>
+          <div class="description">
+            <h2 class="AboutMe">About Me</h2>
+            <p>
+              I'm Douglas Post, a recent graduate from a tech program in
+              Auckland, known as Dev Academy Aotearoa. At Dev Academy, I
+              acquired skills in building fullstack software applications in an
+              Agile environment.
+            </p>
+            <p>
+              My professional journey includes 5 years as a support analyst in
+              Brazil, where I assisted ERP users, followed by 5 months as a help
+              desk technician in Auckland, gaining valuable local IT experience.
+              I'm now transitioning into software development, with a keen
+              interest in server-side work and data analysis.
+            </p>
+            <p>
+              Upon arriving in New Zealand 6 years ago on a working holiday
+              visa, I had the opportunity to work and travel across the country.
+              After that great experience, my partner and I decided to settle
+              here and make Aotearoa our new home. To secure residency, I
+              embarked on a career in construction and also took this period to
+              improve my language skills. This journey included managing small
+              teams, which taught me the importance of teamwork and effective
+              communication.
+            </p>
+            <p>
+              In my free time, I enjoy playing football, staying active with
+              workouts, and exploring nature through hiking and cycling. I also
+              have a passion for cooking, particularly barbecue.
+            </p>
+            <p>Let's connect and explore how I can contribute to your team!</p>
+            <div class="center">
+              <a
+                class="button"
+                href="https://drive.google.com/file/d/1C48zr_icr5hiRh9gEiMn8lEx0FgaYsD8/view?usp=sharing"
+                >Download CV</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-   
       <div class="projects-container">
         <h2>MY PROJECTS</h2>
-        <p class="myProjects">Below are some projects that I've worked on. Feel free to explore their descriptions and README files for more details about each one.</p>
+        <p class="myProjects">
+          Below are some projects that I've worked on. Feel free to explore
+          their descriptions and README files for more details about each one.
+        </p>
         <div class="projects">
-          <div class="project" onclick="window.location.href='https://douglasmagni.github.io/TodoList/';">
+          <div
+            class="project"
+            onclick="window.location.href='https://douglasmagni.github.io/TodoList/';"
+          >
             <h2>Todo List</h2>
-            <p>A simple todo list application that allows users to add, delete, and mark tasks as completed.</p>
-            <p>I made this project in the second week of the bootcamp, after learning about React, because I felt that I needed to improve my abilities in React. So this is my very first project. I wanted to do something simple and be able to finish it in the same weekend, as the next week I would learn something else.</p>
-        
+            <p>
+              A simple todo list application that allows users to add, delete,
+              and mark tasks as completed.
+            </p>
+            <p>
+              I made this project in the second week of the bootcamp, after
+              learning about React, because I felt that I needed to improve my
+              abilities in React. So this is my very first project. I wanted to
+              do something simple and be able to finish it in the same weekend,
+              as the next week I would learn something else.
+            </p>
+
             <div class="project-image">
-              <img src="todo2.png" alt="project">
-           
+              <img src="todo2.png" alt="project" />
             </div>
             <!-- <div class="icon-image"><img src="htmllogo.png"> </div> -->
-           
           </div>
-          <div class="project" onclick="window.location.href='project2.html';">
+          <div
+            class="project"
+            onclick="window.location.href='https://movies-lib-sooty.vercel.app/';"
+          >
+            <h2>MoviesLib</h2>
+
+            <p>
+              This project, named 'MoviesLib,' originated during the third week
+              of the Dev Academy boot camp. After the boot camp concluded, I
+              seized the opportunity to further develop it, adding additional
+              styling and features to refine it into a showcase piece for my
+              portfolio.
+            </p>
+            <p>
+              MoviesLib is a project that allowed me to hone my front-end skills
+              while practicing API consumption. Specifically, it interfaces with
+              the TMDB (The Movie Database) API to fetch movie data dynamically.
+              Through this project, I aimed to reinforce my understanding of API
+              integration and enhance my proficiency in front-end development.
+            </p>
+            <p>
+              I invite you to explore MoviesLib and experience the culmination
+              of my efforts in this endeavor.
+            </p>
+            <div class="project-image">
+              <img class="tradie" src="movies.PNG" alt="project" />
+            </div>
+
+            <!-- <div class="project-image">
+              <img class="tradie" src="tradie.JPG" alt="project">
+            </div>
+          <!-- <div class="project" onclick="window.location.href='project2.html';">
             <h2>Tradie Tracker App</h2>
             <div class="warnningToDelete"><p>     <b>                  This project is going to be available soon!</b>  </p></div>
             <p>The Tradie Tracker App is a web application designed to streamline job management for tradespeople. It allows users to efficiently manage their projects, clients, and tasks in one centralized platform.</p>
@@ -89,28 +163,31 @@
             </div> -->
             <p></p>
           </div>
+          -->
           <!-- Add more projects here -->
         </div>
         <!-- Close the project-wrapper -->
       </div>
-
-  </div>
-  <footer id="contact">
-    <div class="contact-container">
-      <h2>Contact Me</h2>
-      <div class="social-links">
-        <a href="https://github.com/DouglasMagni" target="_blank">
-          <img src="github-mark-white.png" alt="GitHub">
-        </a>
-        <a href="mailto:youremail@example.com">
-          <img src="email1.png" alt="Email">
-        </a>
-        <a href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/" target="_blank">
-          <img src="linkedIn.png" alt="LinkedIn">
-        </a>
-      </div>
     </div>
-  </footer>
-  <script src="port.js"></script>
-</body>
+    <footer id="contact">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+          <a href="https://github.com/DouglasMagni" target="_blank">
+            <img src="github-mark-white.png" alt="GitHub" />
+          </a>
+          <a href="mailto:youremail@example.com">
+            <img src="email1.png" alt="Email" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/"
+            target="_blank"
+          >
+            <img src="linkedIn.png" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="port.js"></script>
+  </body>
 </html>
