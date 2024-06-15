@@ -16,6 +16,7 @@ p {
 
 .myProjects {
   text-align: center;
+  padding: 10px;
 }
 h1 {
   text-align: center;
@@ -96,11 +97,13 @@ body {
 
 /* Project styling */
 .projects-container {
-  margin-top: 100px;
+  margin: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #687ce056;
+  border-radius: 1%;
   /* Add padding for spacing */
 }
 
