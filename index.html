@@ -5,56 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="port.css" />
-    <style>
-      .project-image {
-        text-align: center; /* Center the image */
-        margin-bottom: 10px; /* Add some space below the image */
-      }
-
-      .tech-icons {
-        text-align: center; /* Center the icons */
-        margin-top: 10px; /* Add some space above the icons */
-      }
-
-      .tech-icons img {
-        margin: 0 5px; /* Add some space between the icons */
-      }
-    </style>
   </head>
-  <body>
-    <header>
-      <div class="social-links">
-        <a href="https://github.com/DouglasMagni" target="_blank">
-          <img src="github-mark-white.png" alt="GitHub" />
-        </a>
-        <a href="mailto:youremail@example.com">
-          <img src="email1.png" alt="Email" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/"
-          target="_blank"
+
+  <header>
+    <div class="social-links">
+      <a href="https://github.com/DouglasMagni" target="_blank">
+        <img src="github-mark-white.png" alt="GitHub" />
+      </a>
+      <a href="mailto:youremail@example.com">
+        <img src="email1.png" alt="Email" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/"
+        target="_blank"
+      >
+        <img src="linkedIn.png" alt="LinkedIn" />
+      </a>
+    </div>
+    <h1>DOUGLAS MAGNI POST</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a class="button" href="#about">About</a></li>
+      <li>
+        <a class="button" href="#data-projects">Data Analysis Projects</a>
+      </li>
+      <li>
+        <a class="button" id="#data-eng-projects" href="#data-eng-projects"
+          >Data Engineering Projects</a
         >
-          <img src="linkedIn.png" alt="LinkedIn" />
-        </a>
-      </div>
-      <h1>DOUGLAS MAGNI POST</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a class="button" href="#about">About</a></li>
-        <li>
-          <a class="button" id="software-projects" href="#software-projects"
-            >Software Engineer Projects</a
-          >
-        </li>
-        <li>
-          <a class="button" id="data-eng-projects" href="#data-projects"
-            >Data Engineering Projects</a
-          >
-        </li>
-        <li><a class="button" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      </li>
+      <li>
+        <a class="button" id="#software-projects" href="#software-projects"
+          >Software Engineering Projects</a
+        >
+      </li>
+      <li><a class="button" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <body>
     <div class="body">
       <section id="about">
         <div class="btn">
@@ -71,11 +61,16 @@
             </p>
             <p>
               My professional journey includes 5 years as a support analyst in
-              Brazil, where I assisted ERP users, followed by 5 months as a help
+              Brazil, where I assisted ERP users, followed by 6 months as a help
               desk technician in Auckland, gaining valuable local IT experience.
-              I'm now transitioning into software development, with a keen
-              interest in server-side work and data analysis.
             </p>
+            <p>
+              I'm now transitioning into the Data Analysis and Engineering
+              world. Using tech skills to explore data, manage it, manipulate it
+              and finally, extracting insights from data, is something that I am
+              fascinated about.
+            </p>
+
             <p>
               Upon arriving in New Zealand 6 years ago on a working holiday
               visa, I had the opportunity to work and travel across the country.
@@ -104,6 +99,250 @@
         </div>
       </section>
 
+      <section id="data-projects">
+        <div class="projects-container">
+          <h2>Data Analysis Projects</h2>
+          <p class="myProjects">
+            Below are some Data Analysis projects that I've worked on. Feel free
+            to explore their descriptions and README files for more details
+            about each one.
+          </p>
+          <div class="project">
+            <div
+              class="projects"
+              onclick="window.location.href='https://github.com/DouglasMagni/Football-Performance-Analysis/tree/main';"
+            >
+              <!-- Project 1 -->
+              <h2>Football Performance Analysis Project</h2>
+              <h3>Project Overview</h3>
+              <p>
+                Explore the fascinating correlation between physical activity
+                and sports performance with my Football Performance Analysis
+                project. Leveraging real data from my daily step counts recorded
+                in <strong>JSON format</strong> and detailed match statistics
+                stored in a <strong>CSV file</strong>, this project delves into
+                how my weekly step activity influences my football game
+                outcomes.
+              </p>
+              <h3>Questions Explored:</h3>
+              <p><strong>Correlation Analysis:</strong></p>
+              <p><strong>
+                1 - Is there a relationship between the weekly steps total and the
+                week's football performance? If so, how strong is it? </strong>
+                <p>I found a
+                strong positive correlation between weekly steps and metrics
+                like goals scored and team wins. </p>
+                <p><strong>2 - Is there a relationship between
+                the total steps on the football day and the football
+                performance? If so, how strong is it?</strong>
+              </p>
+              <p>
+                There is a moderate to strong positive correlation between steps
+                on football days and metrics like goals scored, assists, and
+                team wins. 
+                <p><strong>3 - Which has a stronger correlation to my football
+                performance: total steps on football days or total steps per
+                week? </strong></p>
+                <p>Total steps per week generally showed stronger
+                correlations with metrics like goals scored and team wins.
+                However, for assists, total steps on football days exhibited a
+                stronger correlation.</p>
+              </p>
+              <h3>Conclusions:</h3>
+              <p>
+                Using Python, I conducted a
+                <strong>correlation analysis</strong> to uncover meaningful
+                insights. By merging and analyzing these datasets, I unveiled
+                compelling connections between my physical activity levels and
+                key game metrics such as goals scored, assists made, and team
+                victories. This project showcases my skills in
+                <strong>data integration, manipulation, and analysis,</strong>
+                highlighting my ability to derive actionable insights from
+                diverse data sources.
+              </p>
+              <p>
+               <strong> Click here to check it out on my github profile:</strong>
+              </p>
+              <div class="project-image">
+                <img
+                  src="football.jpg"
+                  alt="Step Counter Project"
+                  class="tradie"
+                />
+              </div>
+              <div class="tech-icons">
+                <img
+  align="center"
+  alt="Python"
+  height="30"
+  width="40"
+  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+/>
+<img
+  align="center"
+  alt="Pandas"
+  height="30"
+  width="40"
+  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg"
+/>
+<img
+  align="center"
+  alt="Numpy"
+  height="30"
+  width="40"
+  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg"
+/>
+<img
+  align="center"
+  alt="Matplotlib"
+  height="30"
+  width="40"
+  src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg"
+/>
+              </div>
+            </div>
+            <!-- Add more Data Analysis projects here -->
+          </div>
+          <div class="project" 
+          onclick="window.location.href='https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1251858687476253/4409044458359740/739562443569071/latest.html';">
+            <h2>What Factors Affect Laptop Computer Prices?</h2>
+            <p>
+              In this project, I used the<strong> Databricks environment</strong> to explored the factors that influence laptop
+              computer prices using a dataset from Kaggle. I analyzed various
+              attributes such as brand, memory type, and processor speed to
+              understand their impact on pricing.
+            </p>
+
+            <h3>Methods Used:</h3>
+            <ul>
+              <li>
+                <strong>Descriptive Analytics (SQL):</strong> Performed
+                calculations to determine the average price of different laptop
+                brands. Analyzed the distribution of laptops with various types
+                of memory (DDR3, DDR4, DDR5). Normalized prices from Indian
+                Rupees to New Zealand Dollars for consistency.
+              </li>
+            </ul>
+
+            <h3>Conclusion:</h3>
+            <p>
+              This analysis highlights how brand reputation and technology
+              advancements impact laptop pricing. The unexpected higher cost of
+              DDR3 RAM laptops underscores the influence of brand value in the
+              tech market.
+            </p>
+            <div class="project-image">
+              <img
+                src="laptopsprices.JPG"
+                alt="Step Counter Project"
+                class="tradie"
+              />
+              
+            </div>
+            <div class="tech-icons">
+              <img
+  align="center"
+  alt="SQL"
+  height="30"
+  width="40"
+  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg"
+/>
+<img
+align="center"
+alt="Advanced SQL"
+height="30"
+width="40"
+src="https://img.icons8.com/color/48/000000/sql.png"
+/>
+<img
+  align="center"
+  alt="Databricks"
+  height="40"
+  width="50"
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Databricks_Logo.png/800px-Databricks_Logo.png"
+/>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="data-projects" class="projects-container">
+        <h2>Data Engineering Project</h2>
+        <p class="myProjects">
+          Below are some Data Engineering projects that I've worked on. Feel
+          free to explore their descriptions and README files for more details
+          about each one.
+        </p>
+        <div class="projects">
+          <div
+            class="project"
+            onclick="window.location.href='https://nova-drive-motors.vercel.app/';"
+          >
+            <h2>NovaDriver Motors</h2>
+            <p>
+              NovaDrive Motors is a project focused on enhancing how sales data
+              is managed and analyzed. Using tools like PostgreSQL for exploring
+              data and Snowflake for storing it securely, the project integrates
+              Apache Airflow for automating data workflows and dbt for
+              transforming data efficiently.
+            </p>
+            <p>
+              This project highlights my skills in data engineering, SQL, and
+              cloud technologies like AWS, demonstrating my ability to build
+              effective data solutions for business insights.
+            </p>
+            <div class="project-image">
+              <img src="dashboard.JPG" class="tradie" alt="project" />
+            </div>
+            <div class="tech-icons">
+              <img
+                align="center"
+                alt="Python"
+                height="30"
+                width="40"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+              />
+              <img
+                align="center"
+                alt="Advanced SQL"
+                height="30"
+                width="40"
+                src="https://img.icons8.com/color/48/000000/sql.png"
+              />
+              <img
+                align="center"
+                alt="Snowflake"
+                height="30"
+                width="40"
+                src="https://img.icons8.com/color/48/000000/snowflake.png"
+              />
+              <img
+                align="center"
+                alt="PostgreSQL"
+                height="30"
+                width="40"
+                src="https://img.icons8.com/color/48/000000/postgreesql.png"
+              />
+              <img
+                align="center"
+                alt="AWS"
+                height="30"
+                width="40"
+                src="https://img.icons8.com/color/48/000000/amazon-web-services.png"
+              />
+              <img
+                align="center"
+                alt="Airflow"
+                height="30"
+                width="40"
+                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original-wordmark.svg"
+              />
+            </div>
+          </div>
+          <!-- Add more Data Engineering projects here -->
+        </div>
+      </div>
       <div id="software-projects" class="projects-container">
         <h2>Software Engineering Projects</h2>
         <p class="myProjects">
@@ -211,6 +450,13 @@
               />
               <img
                 align="center"
+                alt="Vitest"
+                height="30"
+                width="40"
+                src="https://vitest.dev/logo-shadow.svg"
+              />
+              <img
+                align="center"
                 alt="HTML5"
                 height="30"
                 width="40"
@@ -223,129 +469,63 @@
                 width="40"
                 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
               />
-              <img
-                align="center"
-                alt="Vitest"
-                height="30"
-                width="40"
-                src="https://vitest.dev/logo-shadow.svg"
-              />
             </div>
           </div>
         </div>
       </div>
 
-      <div id="data-projects" class="projects-container">
-        <h2>Data Engineering Projects</h2>
-        <p class="myProjects">
-          Below are some Data Engineering projects that I've worked on. Feel
-          free to explore their descriptions and README files for more details
-          about each one.
-        </p>
-        <div class="projects">
-          <div
-            class="project"
-            onclick="window.location.href='https://nova-drive-motors.vercel.app/';"
-          >
-            <h2>NovaDriver Motors</h2>
-            <p>
-              NovaDrive Motors is a project focused on enhancing how sales data
-              is managed and analyzed. Using tools like PostgreSQL for exploring
-              data and Snowflake for storing it securely, the project integrates
-              Apache Airflow for automating data workflows and dbt for
-              transforming data efficiently.
-            </p>
-            <p>
-              This project highlights my skills in data engineering, SQL, and
-              cloud technologies like AWS, demonstrating my ability to build
-              effective data solutions for business insights.
-            </p>
-            <div class="project-image">
-              <img src="dashboard.JPG" class="tradie" alt="project" />
-            </div>
-            <div class="tech-icons">
-              <img
-                align="center"
-                alt="Python"
-                height="30"
-                width="40"
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
-              />
-              <img
-                align="center"
-                alt="Advanced SQL"
-                height="30"
-                width="40"
-                src="https://img.icons8.com/color/48/000000/sql.png"
-              />
-              <img
-                align="center"
-                alt="Snowflake"
-                height="30"
-                width="40"
-                src="https://img.icons8.com/color/48/000000/snowflake.png"
-              />
-              <img
-                align="center"
-                alt="PostgreSQL"
-                height="30"
-                width="40"
-                src="https://img.icons8.com/color/48/000000/postgreesql.png"
-              />
-              <img
-                align="center"
-                alt="AWS"
-                height="30"
-                width="40"
-                src="https://img.icons8.com/color/48/000000/amazon-web-services.png"
-              />
-              <img
-                align="center"
-                alt="Airflow"
-                height="30"
-                width="40"
-                src="https://raw.githubusercontent.com/devicons/devicon/master/icons/apache/apache-original-wordmark.svg"
-              />
-            </div>
+      <footer id="contact">
+        <div class="contact-container">
+          <h2>Contact Me</h2>
+          <div class="social-links">
+            <a href="https://github.com/DouglasMagni" target="_blank">
+              <img src="github-mark-white.png" alt="GitHub" />
+            </a>
+            <a href="mailto:youremail@example.com">
+              <img src="email1.png" alt="Email" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/"
+              target="_blank"
+            >
+              <img src="linkedIn.png" alt="LinkedIn" />
+            </a>
           </div>
-          <!-- Add more Data Engineering projects here -->
         </div>
-      </div>
+      </footer>
     </div>
-    <footer id="contact">
-      <div class="contact-container">
-        <h2>Contact Me</h2>
-        <div class="social-links">
-          <a href="https://github.com/DouglasMagni" target="_blank">
-            <img src="github-mark-white.png" alt="GitHub" />
-          </a>
-          <a href="mailto:youremail@example.com">
-            <img src="email1.png" alt="Email" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/douglas-magni-post-9a70167a/"
-            target="_blank"
-          >
-            <img src="linkedIn.png" alt="LinkedIn" />
-          </a>
-        </div>
-      </div>
-    </footer>
+
     <script>
       document.querySelectorAll(".button").forEach((button) => {
         button.addEventListener("click", (event) => {
           event.preventDefault();
-          const targetId = button.getAttribute("href").substring(1); // Remove the "#" from the href
-          const target = document.getElementById(targetId); // Select the target element by ID
+          const targetId = button.getAttribute("href").substring(1);
+          const target = document.getElementById(targetId);
 
           if (target) {
+            const offset = targetId === "data-analysis" ? -100 : -80;
             window.scrollTo({
-              top: target.offsetTop - 100, // Adjusted scroll position to accommodate fixed header
+              top: target.offsetTop + offset,
               behavior: "smooth",
             });
           }
         });
       });
     </script>
+    <style>
+      .project-image {
+        text-align: center; /* Center the image */
+        margin-bottom: 10px; /* Add some space below the image */
+      }
+
+      .tech-icons {
+        text-align: center; /* Center the icons */
+        margin-top: 10px; /* Add some space above the icons */
+      }
+
+      .tech-icons img {
+        margin: 0 5px; /* Add some space between the icons */
+      }
+    </style>
   </body>
 </html>

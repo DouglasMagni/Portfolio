@@ -63,6 +63,9 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
 }
+.fixed {
+  position: fixed;
+}
 /*---------body--------*/
 
 body {
